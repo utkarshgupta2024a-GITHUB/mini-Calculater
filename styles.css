@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #3e3e3e;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5rem;
+    border: none;
+    box-sizing: border-box; 
+}
+
+.calculator-keys {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    padding: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.operator {
+    background-color: #f69906;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #d68705;
+}
+
+.all-clear {
+    background-color: #a5981e;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #a30000;
+}
+
+.equal-sign {
+    background-color: #4caf50;
+    color: #fff;
+   
+    grid-row: 4 / 6; /* Spans across two rows */
+    height: 121px; /* Adjust height to fill the space */
+}
+
+.equal-sign:hover {
+    background-color: #43a047;
+}
